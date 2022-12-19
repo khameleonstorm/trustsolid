@@ -1,0 +1,77 @@
+.container{
+  width: 100%;
+  min-height: 250px;
+  margin: 100px 0;
+  display: flex;
+  align-items: flex-end;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+  url(../../assets/cta-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  gap: 100px;
+  padding: 0 60px 70px 60px;
+}
+
+.text{
+  width: 80%;
+}
+
+.text h1{
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.text p{
+  font-size: .9rem;
+  color: #fff;
+  font-weight: 300;
+}
+
+.button{
+  min-width: fit-content;
+  padding: 11px 25px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  text-align: center;
+  transition: all .2s ease-in-out;
+}
+
+.button:hover{
+  background: #fff;
+  color: #000;
+}
+
+
+@media screen and (max-width: 850px){
+.container{
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  gap: 30px;
+}
+
+.text{
+  width: 80%;
+  text-align: center;
+}
+
+.text h1{
+  font-size: 7vw;
+}
+
+.button{
+  margin-top: 20px;
+}
+}
+
+
+@media screen and (max-width: 600px){
+.container{
+  padding: 50px 10px;
+  gap: 30px;
+}
+}

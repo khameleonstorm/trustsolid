@@ -1,0 +1,14 @@
+.spinnerContainer{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #16152c;
+  z-index: 20000;
+}
+
+.spinner{
+  width: 100px;
+  height: 100px;
+}

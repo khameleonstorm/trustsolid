@@ -1,0 +1,150 @@
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left{
+  width: 55%;
+  height: 270px;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.leftTextWrapper{
+  width: 55%;
+}
+
+.title{
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.subtitle1{
+  font-size: 1.2rem;
+  padding: 10px 0;
+}
+
+.subtitle2{
+  font-size: 1.1rem;
+  padding: 25px 0;
+  font-weight: 300;
+}
+
+.subtitle3{
+  font-size: .9rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: all ease .3s;
+}
+
+.subtitle3:hover{
+  gap: 10px;
+  cursor: pointer;
+}
+
+.subtitle3 span{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.imageWrapper{
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  background: linear-gradient(310deg, #7b4604 0%, #282454 100%);
+}
+
+.imageWrapper img{
+  width: 100%;
+}
+
+.right{
+  width: 38%;
+  height: 270px;
+  background: white;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.text{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(310deg, #7b4604 0%, #282454 100%);
+  border-radius: 15px;
+  padding: 20px;
+  color: white;
+}
+
+.text h1{
+  font-size: 1.3rem;
+  color: inherit;
+}
+
+.text p{
+  font-size: .95rem;
+  font-weight: 300;
+}
+
+.best{
+  font-size: .9rem;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: all ease .3s;
+}
+
+.best:hover{
+  gap: 10px;
+  cursor: pointer;
+}
+
+.best span{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1100px){
+.container{
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.left{
+  width: 100%;
+  height: fit-content;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.leftTextWrapper{
+  width: 100%;
+}
+
+.imageWrapper{
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+.imageWrapper img{
+  width: 100%;
+}
+
+.right{
+  width: 100%;
+  height: 300px;
+}
+}

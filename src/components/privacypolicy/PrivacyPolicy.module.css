@@ -1,0 +1,26 @@
+.container{
+  width: 100%;
+  padding: 60px 20px;
+}
+
+.text{
+  width: 100%;
+}
+
+.textWrapper{
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.textWrapper p{
+  font-size: .8rem;
+  line-height: 1.5;
+  padding: 10px 0;
+}
+
+.textWrapper h2{
+  font-size: 1.8rem;
+  padding: 15px 0;
+  text-shadow: 0 0 3px rgba(4, 0, 53, 0.5);
+}

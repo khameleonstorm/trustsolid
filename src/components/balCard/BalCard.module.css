@@ -1,0 +1,95 @@
+.container{
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.balCard{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.card{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px;
+  background: rgb(249, 249, 249);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 15px;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.cardheader{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardtitle{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 7px;
+}
+
+.cardtitle h3{
+  font-size: .9rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.isactive{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(310deg, #7b4604 0%, #282454 100%);
+  border-radius: 10px;
+}
+
+.circle{
+  font-size: 1.5rem;
+  color: white;
+}
+
+.cardbody{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardbody h1{
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+}
+
+.chart{
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 600px){
+.container{
+  min-height: 500px;
+}
+.balCard{
+  padding: 0 10px;
+  gap: 10px;
+}
+
+.card{
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 0px;
+  gap: 0px;
+}
+
+}

@@ -1,0 +1,248 @@
+.container{
+  width: 100%;
+  padding: 30px 100px 100px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 40px;
+}
+
+.header{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0 0 0;
+}
+
+.title{
+  font-size: 3rem;
+  padding: 15px 0;
+  text-shadow: 0 0 3px rgba(4, 0, 53, 0.5);
+  position: relative;
+}
+
+.title::after{
+  content: '';
+  width: 50px;
+  padding: 2.5px;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #000;
+  filter: drop-shadow(0 0 3px rgba(4, 0, 53, 0.5));
+}
+
+.subtitle{
+  font-size: 1rem;
+  padding: 15px 0;
+}
+
+.card{
+  width: 280px;
+  border-radius: 20px;
+  padding: 45px 20px 30px 20px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.03), 0 4px 10px 0 rgba(0, 0, 0, 0.09);
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(113, 113, 113, 0.1);
+  backdrop-filter: blur(20px);
+  transition: all ease-in-out .3s;
+}
+
+.card:hover{
+  transform: translateY(-5px) scale(1.05);
+  transition: all ease-in-out .3s;
+}
+
+.content1 h1{
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  padding-bottom: 30px;
+}
+
+.content1 h2{
+  color: rgb(255, 255, 255);
+  font-size: 1.6rem;
+  padding-bottom: 30px;
+}
+
+.content1 h3{
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  padding-bottom: 8px;
+}
+
+.content1 p{
+  color: rgba(255, 255, 255, 0.848);
+  font-size: 1rem;
+}
+
+.content1 span{
+  width: 200px;
+  border-radius: 10px;
+  padding: 1px;
+  background: rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+  display: inline-block;
+}
+
+.fact1 span, .fact2 span{
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.fact1 span{
+  color: rgba(243, 51, 3, 0.8);
+  font-size: 1rem;
+}
+
+.fact2 span{
+  color: rgb(4, 177, 120);
+  font-size: 1rem;
+}
+
+.fact1 span p, .fact2 span p{
+  color: rgb(255, 255, 255);
+}
+
+.buttons{
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.button1{
+  width: fit-content;
+  display: flex;
+  padding: 7px 15px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  transition: all .3s ease;
+}
+
+.button1:hover{
+  background: rgba(0, 208, 142, 0.398);
+  color: black;
+}
+
+.button2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 1rem;
+  transition: all .3s ease;
+}
+
+.button2:hover{
+  color: rgba(0, 40, 28, 0.8);
+  gap: 8px;
+}
+
+.content3 {
+  width: 100%;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 90%;
+  filter: contrast(110%);
+}
+
+
+.modal{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  transition: all .3s ease;
+}
+
+.modalcontent{
+  width: 300px;
+  background: white;
+  border-radius: 15px;
+}
+
+.modalcontent form{
+  width: 100%;
+  padding: 20px;
+}
+
+
+.modalcontent h1{
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.8);
+  padding-bottom: 20px;
+}
+
+.btns{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.submit{
+  background: black !important;
+  color: white;
+}
+
+.cancel:hover{
+  color: rgba(0, 55, 207, 0.8);
+  cursor: pointer;
+}
+
+.error{
+  font-size: .8rem;
+  color: rgb(255, 35, 11);
+}
+
+
+
+
+@media screen and (max-width: 1100px){
+.container{
+  padding: 50px 10px;
+}
+
+
+.title{
+font-size: 9vw;
+}
+
+.title::after{
+width: 15vw;
+padding: .3vw;
+}
+
+}
+
+@media screen and (max-width: 600px){
+  
+.card{
+  width: 90%;
+  height: fit-content;
+}
+
+}

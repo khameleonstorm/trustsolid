@@ -1,0 +1,50 @@
+.container{
+  width: 100%;
+  padding: 10px 0;
+}
+
+.logos{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 0 50px;
+  margin-bottom: 10px;
+}
+
+.logos img{
+  width: 180px;
+  object-fit: cover;
+}
+
+.tvcontainer{
+  width: 100%;
+}
+
+.tvcontainer div{
+  display: none;
+  position: relative;
+}
+/* 
+.tvcontainer div:first-child{
+  display: block;
+} */
+
+
+@media screen and (max-width: 700px){
+.logos{
+  padding: 0 20px;
+}
+
+.logos img{
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.tvcontainer{
+  margin: 5px 0;
+}
+
+}

@@ -1,0 +1,192 @@
+.container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 60px 100px 60px;
+}
+
+.title{
+  font-size: 3rem;
+  padding: 15px 0;
+  text-shadow: 0 0 3px rgba(4, 0, 53, 0.5);
+  position: relative;
+}
+
+.title::after{
+  content: '';
+  width: 50px;
+  padding: 2.5px;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #000;
+  filter: drop-shadow(0 0 3px rgba(4, 0, 53, 0.5));
+}
+
+.subtitle{
+  font-size: 1rem;
+  padding: 15px 0;
+  font-family: 'isidora_sansbold';
+}
+
+.formContainer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.left{
+  width: 45%;
+  background-color: rgba(113, 113, 113, 0.1);
+  backdrop-filter: blur(20px);
+  border-top: 7px solid rgba(0, 132, 255, 0.7);
+  border-radius: 15px;
+  padding: 30px 20px;
+}
+
+.address{
+  margin-bottom: 50px;
+}
+
+.loc, .email{
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.locText, .emailText{
+  width: 90%;
+  margin-left: 20px;
+  color: white;
+}
+
+.locText p, .emailText p{
+  font-size: .9rem;
+  font-weight: 300;
+  color: white;
+}
+
+.locText h3, .emailText h3{
+  color: white;
+}
+
+.iconWrapper{
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(200, 200, 200, 0.9);
+  filter: drop-shadow(0 0 3px rgba(4, 0, 53, 0.5));
+  border-radius: 50%;
+  transition: all .3s ease;
+}
+
+.icon{
+  fill: black;
+}
+
+.iconWrapper:hover{
+  background: rgba(1, 1, 1, 0.5);
+}
+
+.iconWrapper:hover svg{
+  fill: whitesmoke;
+}
+
+.iframe{
+  width: 100%;
+  height: 340px;
+  border: none;
+  border-radius: 10px;
+}
+
+.right{
+  width: 50%;
+  display: none;
+  background-color: rgb(255, 255, 255);
+  backdrop-filter: blur(20px);
+  border-top: 7px solid rgba(0, 132, 255, 0.7);
+  border-radius: 15px;
+  padding: 30px 20px;
+}
+
+.right form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formGroup{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.input1{
+  width: 48%;
+}
+
+.input{
+  width: 100%;
+}
+
+.btn{
+  width: 100%;
+  padding: 17px 0;
+  background: rgb(0, 0, 0);
+  color: rgb(244, 244, 244);
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.btn:hover{
+  background-image: linear-gradient(to left, rgba(0, 217, 255, 0.4), rgba(0, 255, 174, 0.5));
+}
+
+@media screen and (max-width: 850px){
+.container{
+  padding: 0 20px;
+  margin-top: 50px;
+}
+
+.title{
+  font-size: 7vw;
+}
+
+.title::after{
+  width: 15vw;
+  padding: .3vw;
+}
+
+.formContainer{
+  flex-direction: column;
+}
+
+.left{
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.right{
+  width: 100%;
+}
+
+.input1{
+  width: 100%;
+}
+
+}

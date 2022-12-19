@@ -1,0 +1,122 @@
+.container{
+  min-height: 100vh;
+  background: whitesmoke;
+  padding: 100px 0 0 0;
+}
+
+.form{
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.05);
+}
+
+.form h1{
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.form input{
+  height: 18px;
+}
+
+.upload{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  border: .5px solid rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  padding: 7px 3px;
+  cursor: pointer;
+}
+
+.upload p{
+  font-size: 0.9rem;
+  position: absolute;
+  left: 10px;
+  z-index: 1;
+}
+
+.upload input{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+  padding: 1.5rem;
+}
+
+.upload svg{
+  font-size: 2rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.btn{
+  width: 100%;
+  padding: 17px 0;
+  background-image: linear-gradient(to right, rgba(0, 217, 255, 0.4), rgba(0, 255, 174, 0.5));
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.btn:hover{
+  background-image: linear-gradient(to right, rgba(0, 217, 255, 0.7), rgba(0, 255, 174, 0.8));
+}
+
+.checkbox{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox input{
+  width: 15px;
+  height: 15px;
+}
+
+.checkbox p{
+  font-size: 0.85rem;
+}
+
+.link{
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgb(0, 36, 36);
+  transition: all .3s ease;
+}
+
+.link:hover{
+  color: rgb(40, 185, 124);
+}
+
+.error{
+  color: rgb(247, 45, 45);
+  font-size: 0.9rem;
+  word-wrap: break-word;
+}
+
+
+@media screen and (max-width: 600px){
+  .container{
+    background: none;
+    padding: 80px 0 0 0;
+  }
+  .form{
+    width: 100%;
+    background: none;
+    box-shadow: none;
+  }
+}

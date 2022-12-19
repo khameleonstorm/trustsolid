@@ -1,0 +1,48 @@
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+  gap: 20px;
+}
+
+.left{
+  width: 37.5%;
+}
+
+.right{
+  width: 57%;
+}
+
+.left img{
+  width: 110%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.right img{
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px){
+.container{
+  flex-direction: column;
+  padding: 10px 10px;
+}
+
+.left{
+  width: 100%;
+}
+
+.left img{
+  width: 100%;
+}
+
+.right{
+  width: 100%;
+}
+
+}

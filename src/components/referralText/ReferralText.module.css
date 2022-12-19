@@ -1,0 +1,58 @@
+.container{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 50px 0px;
+  margin: 0 auto;
+}
+
+.title1{
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+
+.title2{
+  font-size: 1.7rem;
+  padding: 10px 0px;
+}
+
+.text1{
+  font-size: 1rem;
+  padding: 10px 0px;
+  font-weight: 200;
+}
+
+.text2{
+  font-size: .8rem;
+  font-weight: 200;
+}
+
+.note{
+  font-size: .9rem;
+  color: rgb(255, 157, 0);
+  padding: 5px 0;
+  line-height: 1.3;
+  font-weight: 200;
+}
+
+.container button{
+  padding: 15px 20px;
+  background: #000000;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  margin: 20px 0px;
+  font-size: .8rem;
+}
+
+@media screen and (max-width: 600px){
+.container{
+  width: 96%;
+}
+
+.note{
+  font-size: 4.7vw;
+}
+}
