@@ -25,6 +25,10 @@
   transition: all ease-in-out .3s;
 }
 
+.logo svg{
+  color: black !important;;
+}
+
 .image{
   width: 35px;
   height: 35px;

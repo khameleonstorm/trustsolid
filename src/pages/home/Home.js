@@ -12,12 +12,12 @@ import HomeSec3 from '../../components/homeSec3/HomeSec3';
 import InvestmentCard from '../../components/investmentCard/InvestmentCard';
 import AppleChart from '../../components/appleChart/AppleChart';
 import Learning from '../../components/learning/Learning';
-import Team from '../../components/team/Team';
+import Testimonials from '../../components/testimonials/Testimonials';
 import Footer from '../../components/footer/Footer';
 // import Copyright from '../../components/copyright/Copyright';
 
 // import texts from utils 
-import { homeSec1Text, homeSec2Text, homeSec3Text, homeSec5Text, homeSec6Text, services, heroText, team } from '../../utils/homeText';
+import { homeSec1Text, homeSec2Text, homeSec3Text, homeSec5Text, homeSec6Text, services, heroText, testimonials } from '../../utils/homeText';
 import { investment } from '../../utils/investText';
 import ContactForm from '../../components/contactForm/ContactForm';
 import { MoonLoader } from 'react-spinners';
@@ -60,7 +60,7 @@ export default function Home() {
         <AppleChart />
         <HomeSec1 title={services.title} subtitle={services.subtitle} card={services.card} />
         <Learning />
-        <Team title={team.title} subtitle={team.subtitle} members={team.card} />
+        <Testimonials title={testimonials.title} subtitle={testimonials.subtitle} testimonials={testimonials.card} />
         <HomeSec2 title={homeSec5Text.title} subtitle={homeSec5Text.subtitle} image={homeSec2Text.image} accordions={homeSec5Text.accordions} reverse={true}/>
         <ContactForm />
         <Footer />

@@ -24,7 +24,7 @@
   bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
-  background: #000;
+  background: rgb(255, 255, 255);
   filter: drop-shadow(0 0 3px rgba(4, 0, 53, 0.5));
 }
 
@@ -45,11 +45,13 @@
 .left h1{
   font-size: 2.5rem;
   margin-bottom: 10px;
+  color: whitesmoke;
 }
 
 .left p{
   font-size: .85rem;
   line-height: 1.8;
+  color: whitesmoke;
 }
 
 .right{

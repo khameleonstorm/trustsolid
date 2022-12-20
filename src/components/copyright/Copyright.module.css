@@ -1,12 +1,12 @@
 .container{
   width: 100%;
-  background: #16152c;
+  background: #000000;
   padding: 30px 20px;
 }
 
 .text{
   font-size: 1rem;
-  color: rgba(240, 248, 255, 0.6);
+  color: rgba(240, 248, 255, 0.362);
   font-family: "isidora_sansbold";
 }
 

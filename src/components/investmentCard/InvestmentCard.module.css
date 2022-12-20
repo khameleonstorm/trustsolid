@@ -40,6 +40,7 @@
 .subtitle{
   font-size: 1rem;
   padding: 15px 0;
+  color: white;
 }
 
 .card{
@@ -147,8 +148,8 @@
 }
 
 .button2:hover{
-  color: rgba(0, 40, 28, 0.8);
-  gap: 8px;
+  color: rgba(202, 255, 239, 0.8);
+  gap: 10px;
 }
 
 .content3 {

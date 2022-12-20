@@ -30,6 +30,7 @@
   font-size: 1rem;
   padding: 15px 0;
   font-family: 'isidora_sansbold';
+  color: #000;
 }
 
 .formContainer{
@@ -42,8 +43,7 @@
 
 .left{
   width: 45%;
-  background-color: rgba(113, 113, 113, 0.1);
-  backdrop-filter: blur(20px);
+  background-color: rgb(190, 190, 190);
   border-top: 7px solid rgba(0, 132, 255, 0.7);
   border-radius: 15px;
   padding: 30px 20px;
@@ -62,17 +62,11 @@
 .locText, .emailText{
   width: 90%;
   margin-left: 20px;
-  color: white;
 }
 
 .locText p, .emailText p{
   font-size: .9rem;
   font-weight: 300;
-  color: white;
-}
-
-.locText h3, .emailText h3{
-  color: white;
 }
 
 .iconWrapper{
@@ -81,7 +75,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(200, 200, 200, 0.9);
+  background: rgba(200, 200, 200, 0.5);
   filter: drop-shadow(0 0 3px rgba(4, 0, 53, 0.5));
   border-radius: 50%;
   transition: all .3s ease;
@@ -108,9 +102,7 @@
 
 .right{
   width: 50%;
-  display: none;
-  background-color: rgb(255, 255, 255);
-  backdrop-filter: blur(20px);
+  background-color: rgb(190, 190, 190);
   border-top: 7px solid rgba(0, 132, 255, 0.7);
   border-radius: 15px;
   padding: 30px 20px;
@@ -143,8 +135,8 @@
 .btn{
   width: 100%;
   padding: 17px 0;
-  background: rgb(0, 0, 0);
-  color: rgb(244, 244, 244);
+  background: #121212;
+  color: rgb(240, 240, 240);
   border: none;
   border-radius: 5px;
   font-size: 1rem;
@@ -154,7 +146,7 @@
 }
 
 .btn:hover{
-  background-image: linear-gradient(to left, rgba(0, 217, 255, 0.4), rgba(0, 255, 174, 0.5));
+  background: #1649ff;
 }
 
 @media screen and (max-width: 850px){
@@ -183,6 +175,7 @@
 
 .right{
   width: 100%;
+  display: block;
 }
 
 .input1{

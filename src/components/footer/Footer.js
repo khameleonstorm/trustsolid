@@ -18,8 +18,6 @@ export default function Footer() {
         <Link to="/home">Home</Link>
         <Link to="/about">About</Link>
         <Link to="#contact">Contact</Link>
-        <Link to="/faq">FAQ</Link>
-        <Link to="/policies">T&C</Link>
       </div>
       <div className={styles.services}>
         <h2>Services</h2>

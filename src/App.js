@@ -5,8 +5,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/home/Home';
 import About from './pages/about/About';
 import Plans from './pages/plans/Plans';
-import Policy from './pages/policy/Policy';
-import Faq from './pages/faq/Faq';
 import SignUp from './pages/signUp/SignUp';
 import Login from './pages/login/Login';
 import ForgotPassword from './pages/forgotPassword/ForgotPassword';
@@ -22,8 +20,6 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/plans" element={<Plans />} />
-          <Route path="/policy" element={<Policy />} />
-          <Route path="/faq" element={<Faq />} />
           <Route path="/signUp" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
           <Route path="/forgotPassword" element={<ForgotPassword />} />

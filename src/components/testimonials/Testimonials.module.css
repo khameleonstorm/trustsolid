@@ -32,50 +32,49 @@
 .subtitle{
   font-size: 1rem;
   margin-bottom: 15px;
+  color: white;
 }
 
-.members{
+.testimonials{
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  gap: 30px;
 }
 
-.member{
-  width: 45%;
+.testimonial{
+  width: 80%;
+  height: fit-content;
   display: flex;
-  background-color: rgba(113, 113, 113, 0.1);
+  background-color: rgba(113, 113, 113, 0.1) !important;
   backdrop-filter: blur(20px);
   border-radius: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   padding: 30px 20px;
-  gap: 20px;
 }
 
-.member:hover{
+.testimonial:hover{
   transform: scale(1.05);
 }
 
-.memberInfo h3{
+.testimonialInfo h3{
   font-size: 1.5rem;
   margin-bottom: 10px;
   color: white;
 }
 
-.memberInfo p{
+.testimonialInfo p{
   font-size: 1rem;
   font-weight: 200;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   color: rgb(231, 231, 231);
 }
 
-.member img{
+.testimonial img{
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  padding-right: 10px;
 }
 
 .social{
@@ -105,8 +104,8 @@
 
 
 @media screen and (max-width: 850px){
-.member{
-  width: 100%;
+.testimonial{
+  width: 250px;
 }
 }
 
@@ -129,12 +128,12 @@
   font-weight: 100;
 }
 
-.member{
+.testimonial{
   padding: 10px;
   gap: 10px;
 }
 
-.member img{
+.testimonial img{
   width: 40px;
   height: 40px;
 }

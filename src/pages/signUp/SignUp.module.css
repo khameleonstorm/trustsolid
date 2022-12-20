@@ -62,8 +62,8 @@
 .btn{
   width: 100%;
   padding: 17px 0;
-  background-image: linear-gradient(to right, rgba(0, 217, 255, 0.4), rgba(0, 255, 174, 0.5));
-  color: rgb(0, 0, 0);
+  background: #121212;
+  color: rgb(240, 240, 240);
   border: none;
   border-radius: 5px;
   font-size: 1rem;
@@ -73,7 +73,7 @@
 }
 
 .btn:hover{
-  background-image: linear-gradient(to right, rgba(0, 217, 255, 0.7), rgba(0, 255, 174, 0.8));
+  background: #1649ff;
 }
 
 .checkbox{
@@ -111,12 +111,12 @@
 
 @media screen and (max-width: 600px){
   .container{
-    background: none;
+    background: white;
     padding: 80px 0 0 0;
   }
   .form{
     width: 100%;
-    background: none;
+    background: white;
     box-shadow: none;
   }
 }

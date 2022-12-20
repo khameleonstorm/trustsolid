@@ -2,15 +2,9 @@ import heroPic from '../assets/hero1.svg';
 import client1 from '../assets/client-1.png';
 import client2 from '../assets/client-2.png';
 import client3 from '../assets/client-3.png';
-import client4 from '../assets/client-4.png';
+import client4 from '../assets/client-4.webp';
 import client5 from '../assets/client-5.png';
 import client6 from '../assets/client-6.png';
-import client7 from '../assets/client-7.png';
-import client8 from '../assets/client-8.png';
-import client9 from '../assets/client-9.webp';
-import client10 from '../assets/client-10.png';
-import client11 from '../assets/client-11.png';
-import client12 from '../assets/client-12.png';
 import blue1 from '../assets/blue1.svg';
 import blue2 from '../assets/blue2.svg';
 import blue3 from '../assets/blue3.svg';
@@ -22,9 +16,9 @@ import marketIcon from '../assets/marketicon.svg';
 import authenticationIcon from '../assets/authenticationicon.svg';
 import securityIcon from '../assets/securityicon.svg';
 import team1 from '../assets/team-1.jpg';
-import team2 from '../assets/team-2.jpg';
+import team2 from '../assets/team-2.png';
 import team3 from '../assets/team-3.jpg';
-import team4 from '../assets/team-4.jpg';
+import team4 from '../assets/team-2.jpg';
 import sec3 from '../assets/cta-bg.png';
 import sec5 from '../assets/sec5.gif';
 
@@ -43,12 +37,6 @@ export const clientLogos = [
   {image: client4},
   {image: client5},
   {image: client6},
-  {image: client7},
-  {image: client8},
-  {image: client9},
-  {image: client10},
-  {image: client11},
-  {image: client12},
 ];
 
 export const homeSec1Text = {
@@ -154,33 +142,33 @@ export const services = {
   ]
 }
 
-export const team = {
-  title: 'TEAM',
-  subtitle: 'TRUSTSOLID TEAM',
+export const testimonials = {
+  title: 'TESTIMONIALS',
+  subtitle: 'WHAT THEY SAY ABOUT TRUSTSOLID',
   card: [
     {
       image: team1,
-      name: 'Walter White',
-      position: 'CEO',
-      remark: "Rise in yourself and watch yourself grow beyond imaginations. Why 9-5 when you can rise a little in yourself, and make a huge amount of cash. You can't go broke rising in yourself..."
+      name: 'Huan Peng',
+      country: 'China',
+      remark: "I was a bit skeptical at first, but TrustSolid has exceeded my expectations. I have seen a steady increase in my investment portfolio and I am very pleased with the service. "
     },
     {
       image: team2,
-      name: 'Sarah Johnson',
-      position: 'Product Manager',
-      remark: "You can be free financially. You can live and work anywhere in the world. You can be independent from routine and not answer to anybody."
+      name: 'Branca Agueda',
+      country: 'Canada',
+      remark: "On the recommendation of a friend, I first entered the investment horizon of TrustSolid in 2019. As the investment process progressed, the facts proved that my investment returns were very punctual and reliable, which made me feel the company's good qualifications and reputation. "
     },
     {
       image: team3,
-      name: 'William Anderson',
-      position: 'CTO',
-      remark: "Many people are too fixate on their past experience. your past made you as you are today. But it doesn't define your future. You can change your future by changing your mindset."
+      name: 'Miguel Elilio',
+      country: 'Portugal',
+      remark: "I  have been using TrustSolid for a few months now and I am very happy with the results. The platform is easy to use and the customer service is excellent. Wonderful team, thank you."
     },
     {
       image: team4,
-      name: 'Amanda Jepson',
-      position: 'Accountant',
-      remark: "It's time to make a difference in your life, rise in your future and make the world a better place where you should trade. "
+      name: 'Johanna Werner',
+      country: 'Germany',
+      remark: "On the recommendation of a friend, I first entered the investment horizon of TrustSolid in 2016. As the investment process progressed, the facts proved that my investment returns were very punctual and reliable, which made me feel the company's good qualifications and reputation. "
     },
   ],
 };
@@ -245,3 +233,12 @@ export const copyright = [
     text: "Trading with TRUSTSOLID by following and/or copying or replicating the trades of other traders involves high levels of risks, even when following and/or copying or replicating the top-performing traders. Such risks include the risk that you may be following/copying the trading decisions of possibly inexperienced/unprofessional traders, or traders whose ultimate purpose or intention, or financial status may differ from yours. Before making an investment decision, you should rely on your own assessment of the person making the trading decisions and the terms of all the legal documentation."
   },
 ];
+
+
+export const recentWithdrawals = [
+  {
+    name: "",
+    country: "",
+    amount: "",
+  },
+]
