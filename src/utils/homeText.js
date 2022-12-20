@@ -156,7 +156,7 @@ export const testimonials = {
       image: team2,
       name: 'Branca Agueda',
       country: 'Canada',
-      remark: "On the recommendation of a friend, I first entered the investment horizon of TrustSolid in 2019. As the investment process progressed, the facts proved that my investment returns were very punctual and reliable, which made me feel the company's good qualifications and reputation. "
+      remark: "On the recommendation of a friend, I first entered the investment horizon of TrustSolid in 2019. As the investment process progressed, the facts proved that my investment returns were very punctual."
     },
     {
       image: team3,
@@ -168,7 +168,7 @@ export const testimonials = {
       image: team4,
       name: 'Johanna Werner',
       country: 'Germany',
-      remark: "On the recommendation of a friend, I first entered the investment horizon of TrustSolid in 2016. As the investment process progressed, the facts proved that my investment returns were very punctual and reliable, which made me feel the company's good qualifications and reputation. "
+      remark: "On the recommendation of a friend, I first entered the investment horizon of TrustSolid in 2016. As the investment process progressed, the facts proved that my investment returns were very. "
     },
   ],
 };
