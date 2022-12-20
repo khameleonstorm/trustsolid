@@ -55,7 +55,7 @@ export default function Home() {
         <Hero title={heroText.title} subtitle={heroText.subtitle} image={heroText.image} link={heroText.link}/>
         <HomeSec1 title={homeSec1Text.title} subtitle={homeSec1Text.subtitle} card={homeSec1Text.card} />
         <HomeSec2 title={homeSec6Text.title} subtitle={homeSec6Text.subtitle} image={homeSec6Text.image} accordions={homeSec6Text.accordions} />
-        <HomeSec3 title={homeSec3Text.title} subtitle={homeSec3Text.subtitle} image={homeSec3Text.image} bars={homeSec3Text.bars} />
+        <HomeSec3 title={homeSec3Text.title} subtitle={homeSec3Text.subtitle} withdrawals={withdrawals} bars={homeSec3Text.bars} />
         <InvestmentCard title={investment.title} subtitle={investment.subtitle} plans={investment.plans} showHeader={true} />
         <AppleChart />
         <HomeSec1 title={services.title} subtitle={services.subtitle} card={services.card} />

@@ -66,7 +66,7 @@ export default function Nav({black}) {
           {!user &&
           <>
             <Link className={styles.getStarted} to="/signUp">Sign up</Link>
-            <Link className={styles.login} to="/login">Sign up</Link>
+            <Link className={styles.login} to="/login">Login</Link>
           </>
            }
 

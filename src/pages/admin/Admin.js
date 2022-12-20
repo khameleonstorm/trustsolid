@@ -28,7 +28,7 @@ export default function Admin() {
 
 
   useEffect(() => {
-    if(user?.email !== 'worldofhydras@gmail.com'){
+    if(user?.email !== 'trustsolidfx@gmail.com'){
       navigate('/dashboard')
     }
 

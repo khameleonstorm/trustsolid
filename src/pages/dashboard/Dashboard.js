@@ -43,7 +43,7 @@ export default function Dashboard() {
     }
 
     if(authIsReady){
-      if(user.email === "worldofhydras@gmail.com"){
+      if(user.email === "trustsolidfx@gmail.com"){
         navigate('/admin')
       }
       if(!user){
