@@ -63,7 +63,12 @@ export default function Nav({black}) {
           <NavLink to="/plans">Plans</NavLink>
           <a onClick={handleContact} href="#contact">Contact</a>
 
-          {!user && <Link className={styles.getStarted} to="/signUp">Get Started</Link>}
+          {!user &&
+          <>
+            <Link className={styles.getStarted} to="/signUp">Sign up</Link>
+            <Link className={styles.login} to="/login">Sign up</Link>
+          </>
+           }
 
           {user && <Link className={styles.getStarted} to="/dashboard">Dashboard</Link>}
         </div>

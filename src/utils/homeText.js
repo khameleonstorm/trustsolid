@@ -23,6 +23,74 @@ import sec3 from '../assets/cta-bg.png';
 import sec5 from '../assets/sec5.gif';
 
 
+
+export const withdrawals = [
+  {
+    name: "Gisela Heidi",
+    country: "Germany",
+  },
+  {
+    name: "Karl Axel",
+    country: "Germany",
+  },
+  {
+    name: "Carmen Alberto",
+    country: "Spain",
+  },
+  {
+    name: "Duarte João",
+    country: "Portugal",
+  },
+  {
+    name: "Charlotte Jonas",
+    country: "Germany",
+  },
+  {
+    name: "Luis Guilherme",
+    country: "Portugal",
+  },
+  {
+    name: "Huan Bao",
+    country: "China",
+  },
+  {
+    name: "Margarida Emilio",
+    country: "Portugal",
+  },
+  {
+    name: "Fernanda Alexandre",
+    country: "Portugal",
+  },
+  {
+    name: "Cai Chung",
+    country: "China",
+  },
+  {
+    name: "Diego Javier",
+    country: "Portugal",
+  },
+  {
+    name: "Wilson Miller",
+    country: "United States",
+  },
+  {
+    name: "Zhào Wáng",
+    country: "China",
+  },
+  {
+    name: "Duke Stone",
+    country: "United States",
+  },
+  {
+    name: "Harry Bill",
+    country: "Canada",
+  },
+  {
+    name: "Kang Chao xing",
+    country: "China",
+  },
+];
+
 export const heroText = {
   title: 'Invest in Stocks, Crypto & More',
   subtitle: 'Join our stock & crypto trading social network with over 1 million users.',

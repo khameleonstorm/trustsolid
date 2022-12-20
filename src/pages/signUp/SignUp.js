@@ -360,7 +360,7 @@ export default function SignUp() {
         </div>
         <div className={styles.checkbox}>
           <input type="checkbox" onClick={handleCheckBox("emailChecked")}/>
-          <p>I agree to receive GLOBETRADERS and third party email</p>
+          <p>I agree to receive TRUSTSOLID and third party email</p>
         </div>
         {formError.policyChecked && <p className={styles.error}>{formError.policyChecked}</p>}
         {formError.emailChecked && <p className={styles.error}>{formError.emailChecked}</p>}
