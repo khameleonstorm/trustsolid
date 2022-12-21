@@ -67,6 +67,9 @@
   cursor: pointer;
 }
 
+.exit{
+  color: black;
+}
 
 .modal{
   width: 100%;
