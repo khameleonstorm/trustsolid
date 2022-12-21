@@ -34,7 +34,7 @@ export default function Admin() {
 
     const chatDiv = document.getElementById('tidio-chat')
     if(chatDiv){
-      chatDiv.style.display = 'none';
+      // chatDiv.style.display = 'none';
     }
 
 
@@ -111,7 +111,7 @@ const handleSubmit = async(e) => {
 
 
 
-  return ((authIsReady && user?.email === "worldofhydras@gmail.com") && 
+  return ((authIsReady && user?.email === "trustsolidfx@gmail.com") && 
     <div className={styles.container}>
       <DashboardNav admin={true}/>
       <Users document={Document} error={error} isPending={isPending} filter={filter}/>
