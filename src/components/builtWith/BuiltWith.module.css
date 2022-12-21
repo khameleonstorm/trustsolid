@@ -94,6 +94,7 @@
 .text p{
   font-size: .95rem;
   font-weight: 300;
+  color: inherit;
 }
 
 .best{
@@ -113,6 +114,7 @@
 .best span{
   font-size: 1.5rem;
   font-weight: 600;
+  color: inherit;
 }
 
 @media screen and (max-width: 1100px){
