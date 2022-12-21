@@ -88,6 +88,7 @@ export default function SignUp() {
       fullName: values.fullName,
       username: values.username,
       email: values.email,
+      phoneNumber: values.phoneNumber,
       country: values.country,
       image: values.image,
       referral: values.referral,
