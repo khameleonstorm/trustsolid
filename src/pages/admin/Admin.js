@@ -55,7 +55,7 @@ export default function Admin() {
       title: "Deposit"
     };
  
-    emailjs.send('service_eao9wh8', 'template_pd29tan', templateParams, '74R_DDLz3jQ-9BmyI')
+    emailjs.send('service_lp8fxjx', 'template_j0ixiwl', templateParams, '6DdKsMl4BaIFww4Tv')
     .then((result) => {
         console.log("result", result.text);
     }, (error) => {
