@@ -100,7 +100,7 @@ export default function Dashboard() {
 
       {page === 'invest' &&
       <div className={styles.main}>
-        <InvestmentCard title={investment.title2} subtitle={investment.subtitle2} plans={investment.plans}/>
+        <InvestmentCard title={investment.title2} subtitle={investment.subtitle2} plans={investment.plans} dashboard={true}/>
       </div>
       }
 

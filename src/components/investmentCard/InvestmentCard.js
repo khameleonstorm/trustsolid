@@ -13,7 +13,7 @@ import { useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import dateFormat from "dateformat";
 
-export default function InvestmentCard({ title, subtitle, plans, showHeader }) {
+export default function InvestmentCard({ title, subtitle, plans, showHeader, dashboard }) {
   const { user, authIsReady } = useAuth()
   const [amount, setAmount] = useState(null);
   const [minPlan, setMinPlan] = useState(null);
@@ -157,19 +157,19 @@ export default function InvestmentCard({ title, subtitle, plans, showHeader }) {
     }
     <div className={styles.container} id="pricing">
       {plans.map(plan  =>
-        <div className={styles.card} key={plan.id}>
+        <div className={styles.card} key={plan.id} style={dashboard ? {background: "white"} : {}}>
           <div className={styles.content3} style={{ background: plan.background}}>
           </div>
           <div className={styles.content1}>
-            <h1>{plan.percent}%</h1>
-            <h2>{plan.title}</h2>
-            <h3>Min Investment → ${plan.min}</h3>
-            <h3>Max Investment → ${plan.max}</h3>
+            <h1 style={dashboard ? {color: "black"} : {}}>{plan.percent}%</h1>
+            <h2 style={dashboard ? {color: "black"} : {}}>{plan.title}</h2>
+            <h3 style={dashboard ? {color: "black"} : {}}>Min Investment → ${plan.min}</h3>
+            <h3 style={dashboard ? {color: "black"} : {}}>Max Investment → ${plan.max}</h3>
             <span></span>
           </div>
           <div className={styles.content2}>
-          {plan.falsepoints.map(falsepoint => <div key={falsepoint} className={styles.fact1}><span><FaRegTimesCircle /><p>{falsepoint}</p></span></div>) }
-          {plan.truepoints.map(truepoint => <div key={truepoint} className={styles.fact2}><span><FaRegCheckCircle /><p>{truepoint}</p></span></div>) }
+          {plan.falsepoints.map(falsepoint => <div key={falsepoint} className={styles.fact1}><span><FaRegTimesCircle /><p style={dashboard ? {color: "black"} : {}}>{falsepoint}</p></span></div>) }
+          {plan.truepoints.map(truepoint => <div key={truepoint} className={styles.fact2}><span><FaRegCheckCircle /><p style={dashboard ? {color: "black"} : {}}>{truepoint}</p></span></div>) }
           </div>
           <div className={styles.buttons}>
             {!user &&

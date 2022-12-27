@@ -38,7 +38,7 @@ export const useSignup = () => {
 
             const uploadTask = uploadBytesResumable(imageRef, image);
 
-            uploadTask.on('state_changed', 
+            uploadTask.on('state_changed',
               (snapshot) => {
                 const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
                 console.log('Upload is ' + progress + '% done');

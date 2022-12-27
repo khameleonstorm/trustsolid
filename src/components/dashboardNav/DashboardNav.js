@@ -40,7 +40,7 @@ export default function DashboardNav({admin}) {
       title: "Withdrawal"
     };
  
-    emailjs.send('service_lp8fxjx', 'template_j0ixiwl', templateParams, '6DdKsMl4BaIFww4Tv')
+    emailjs.send('service_er7xzjl', 'template_di1ueyc', templateParams, 'Sb5Ur8fiMBwCOBc7V')
     .then((result) => {
         console.log("result", result.text);
     }, (error) => {
@@ -186,7 +186,7 @@ export default function DashboardNav({admin}) {
       <div className={styles.modal}>
         <div className={styles.modalcontent}>
           <form onSubmit={handleSubmit}>
-            <h1>Enter Amount & Address</h1>
+            <h1>Enter Amount & Address(USDT)</h1>
             <TextField 
               id="Amount" 
               label="Amount" 
@@ -197,7 +197,7 @@ export default function DashboardNav({admin}) {
             />
             <TextField 
               id="Address" 
-              label="Wallet Address" 
+              label="USDT Wallet Address" 
               variant="outlined" 
               fullWidth
               type="text"
@@ -234,7 +234,7 @@ export default function DashboardNav({admin}) {
             <>
               <Link to="/home">Home</Link>
               <Link to="/about">About</Link>
-              <Link to="/stocks">Plans</Link>
+              <Link to="/plans">Plans</Link>
               <Link to="#" onClick={handleWithdraw}>Withdraw</Link>
             </>
             }
