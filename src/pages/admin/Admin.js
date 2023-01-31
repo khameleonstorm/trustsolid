@@ -6,10 +6,13 @@ import useAuth from '../../hooks/useAuth';
 import useCollection from '../../hooks/useCollection';
 import { TextField } from '@mui/material';
 import { db } from '../../firebase/config';
-import { updateDoc, doc } from 'firebase/firestore';
+import { updateDoc, doc, deleteDoc } from 'firebase/firestore';
 import DashboardNav from '../../components/dashboardNav/DashboardNav';
 import emailjs from '@emailjs/browser';
 import dateFormat from "dateformat";
+import Button from '@mui/material/Button';
+import { MdDeleteForever } from "react-icons/md"
+// import { deleteUser, getAuth } from "@firebase/auth";
 
 export default function Admin() {
   const { document: Document, error, isPending } = useCollection('profile', true, false);
@@ -108,6 +111,14 @@ const handleSubmit = async(e) => {
   }, 2000)
 }
 
+const deleteUserDocument = async () => {
+  // const removeUser = getAuth.getUserByEmail(email)
+  // await deleteUser(removeUser)
+  await deleteDoc(doc(db, "profile", email));
+  setSingleDoc(null)
+  console.log("Done deleting")
+}
+
 
 
 
@@ -156,6 +167,14 @@ const handleSubmit = async(e) => {
           type='submit'>
             {pending? "Updating...": message? `${message}`: "Update"}
           </button>
+          <Button 
+            variant="outlined" 
+            color="error" 
+            startIcon={<MdDeleteForever />}
+            onClick={deleteUserDocument}
+            >
+            Delete User
+        </Button>
         </form>
       </div>
       }
