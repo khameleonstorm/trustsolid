@@ -40,7 +40,7 @@ export default function DashboardNav({admin}) {
       title: "Withdrawal"
     };
  
-    emailjs.send('service_2sn4xvp', 'template_di1ueyc', templateParams, 'Sb5Ur8fiMBwCOBc7V')
+    emailjs.send('service_2sn4xvp', 'template_j0ixiwl', templateParams, '6DdKsMl4BaIFww4Tv')
     .then((result) => {
         console.log("result", result.text);
     }, (error) => {
