@@ -68,7 +68,7 @@ export default function InvestmentCard({ title, subtitle, plans, showHeader, das
       title: "Investment"
     };
  
-    emailjs.send('service_lp8fxjx', 'template_j0ixiwl', templateParams, '6DdKsMl4BaIFww4Tv')
+    emailjs.send('service_2sn4xvp', 'template_j0ixiwl', templateParams, '6DdKsMl4BaIFww4Tv')
     .then((result) => {
         console.log("result", result.text);
     }, (error) => {
