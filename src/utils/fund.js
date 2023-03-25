@@ -28,4 +28,4 @@ export const wallet = [
     address: "TKKakjccQXv4RkZMMbjNRKYdGFuVXd483R",
     link: "",
   },
-];
+]
